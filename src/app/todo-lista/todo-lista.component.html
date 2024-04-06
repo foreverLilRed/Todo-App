@@ -1,0 +1,14 @@
+Hola {{username}}
+<button (click)="borrarData()">Borrar toda la data</button>
+<input type="text" (keypress)="verificar()" [(ngModel)]="tarea">
+<button (click)="agregarTarea()" [disabled]="statusInput">Agregar tarea</button>
+<ul>
+    @for (item of lista; track item.id) {
+        <li>
+            {{ item.tarea }}
+            <button (click)="eliminarTarea(item.id)">Eliminar</button>
+        </li>
+      } @empty {
+        No hay tareas por hacer
+      }
+</ul>

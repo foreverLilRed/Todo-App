@@ -1,0 +1,8 @@
+<h5>mensaje: {{mensajeHijo}}</h5>
+
+<div>
+    <button type="text" id="texto" (click)="enviarMensaje()">Enviar mensaje</button>
+    <label for="texto">Mensaje para enviar:</label>
+    <input type="text" [(ngModel)]="mensaje"/>
+    <button (click)="enviarMensajeTipado()">Enviar tipado</button>
+</div>
