@@ -13,5 +13,4 @@ import { TodoListaComponent } from './todo-lista/todo-lista.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Proyecto';
 }

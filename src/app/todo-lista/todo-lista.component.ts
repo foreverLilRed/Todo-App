@@ -58,10 +58,11 @@ export class TodoListaComponent {
   }
 
   borrarData() {
-    this.todoService.setUsername(''); // Borrar nombre de usuario
-    this.todoService.saveTodoList([]); // Borrar lista de tareas
-    this.username = ''; // Limpiar nombre de usuario en el componente
-    this.lista = []; // Limpiar lista de tareas en el componente
+    this.todoService.setUsername(''); 
+    this.todoService.saveTodoList([]); 
+    this.username = ''; 
+    this.lista = []; 
+    window.location.reload();
   }
 
 }
